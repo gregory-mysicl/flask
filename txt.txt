@@ -1,0 +1,74 @@
+pip install flask
+flask --app hello run - Терминал запуск
+
+
+git..........................start........................git
+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
+
+rm -rf .git - Удалит папку
+
+Настройка пользователя:
+git config --global user.name "Ваше Имя"
+git config --global user.email "ваш@адрес.почты"
+
+git init - Инициализация репозитория : 
+
+git remote add origin <URL удаленного репозитория> - Связывание с удаленным репозиторием : 
+git remote remove origin - Удалть репозитории 
+git remote -v - Покажет список репозиториев
+
+git add --all  -  Добавляет все измененные файлы в индекс, чтобы они были включены в следующий коммит.
+git add . - Всю папку с папкой
+git add name_file
+git файл2 add файл1 - Добавление в индекс:
+
+git reset файл1 файл2 - Удалениe из индекса
+.gitignore  main.py - Игнорировать файл main.py
+logs/*.log -  Игнорировать все файлы .log в папке logs
+node_modules/ -  Игнорировать папку node_modules целиком
+
+git commit -m "commit_1" - Создание сommita
+git push origin master  # Или git push origin main - Отправка изменений на удаленный репозиторий : 
+git pull origin master  # Или git pull origin main - Получение изменений из удаленного репозитория:
+
+git branch master или main - создание ветки
+git push origin main - Публикация
+
+!!! git push origin master  -  для публикации изменений в ветку "master" на удаленном репозитории "origin".
+
+git branch -m master main - Переименовать master в main
+...Просмотр commit...
+git log - Просмотр истории коммитов : 
+
+git branch - Проверить какая ветка
+
+"git branch -a" или "git branch -r" для отображения всех веток, включая удаленные.
+
+git remote -v  -  Посмотреть каие добавленны удаленные репозитории
+
+
+git symbolic-ref refs/heads/main - Изменение имени филиала по умолчанию (по желанию):
+
+Настройка глобального имени филиала по умолчанию (по желанию):
+git config --global init.defaultBranch main
+git config --global init.defaultBranch master
+
+cp -r /путь/к/исходной/папке /путь/к/целевой/папке - скопировать папку
+
+Проверьте текущий статус вашего локального репозитория, чтобы убедиться, что вы находитесь в чистом состоянии и нет несохраненных изменений:
+git status
+Если у вас есть несохраненные изменения, выполните команду git stash, чтобы сохранить их временно и очистить рабочую область.
+git stash
+Обновите вашу локальную ветку с удаленным репозиторием:
+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
+git fetch origin
+Проверьте доступные ветки и выберите ветку, на которую вы хотите откатиться:
+git brach -a
+Если нужно, создайте новую ветку и переключитесь на неё:
+$ git checkout -b new_branch_name origin/branch_name
+Переключитесь на ветку, на которую вы хотите откатиться:
+$ git checkout branch_name
+При необходимости выполните слияние веток:
+$ git merge origin/branch_name
+Удалите временные изменения, сохраненные ранее в шаге 2, если такие были:
+$ git stash drop
